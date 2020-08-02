@@ -34,6 +34,9 @@ import java.util.*;
  *
  *           Collection:
  *              -- Set
+ *                  --Hashset 1.2
+ *                      --LinkedHashSet 1.4
+ *                  --TreeSet 1.2
  *              -- List
  *                  --AbstractList
  *                      --ArrayList 1.2
@@ -56,13 +59,20 @@ import java.util.*;
  *              1.8 link 、数组、树(红黑树)
  *               扩容机制：
  *
+ *      String:
+ *          final 类
  *
+ *          StringBuffer 1.0
+ *          StringBuilder 1.5
  *
  *      线程
  *      IO
  *      异常
  *      数据库
+ *          关系型数据库：mysql oracle db2
+ *          非关系型数据库 redis memcached
  *      spring
+ *
  *      mybatis
  *      springmvc
  *      redis
@@ -72,8 +82,12 @@ import java.util.*;
  */
 public class JavaBaseOne {
     public static void main(String[] args) {
-
-        new Circle();
+        int aa = "123".hashCode();
+        System.out.println(aa);
+        int a =32 % aa; //&
+        int b =32 & aa; //&
+        System.out.println(a+"---"+b);
+//        new Circle();
         /**
          * shape draw constructor
          * shape constructor
